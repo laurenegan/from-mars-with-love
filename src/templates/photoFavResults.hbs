@@ -1,0 +1,24 @@
+<div class="col-md-4">
+    <div class="card mb-4">
+        <div class="card-body">
+            <!--<h2 class="card-title h4">{{ photoRover }}</h2>-->
+            <h2 class="card-title h4">Curiosity</h2>
+            <p>
+                <span id="photoDate_{{ photoID }}">{{ photoDate }}</span> <br />
+                <span id="photoCamera_{{ photoID }}">{{ photoCamera }}</span>
+            </p>
+        </div>
+        <div class="img-container">
+            <button type="button" class="btn btn-primary btn-sm btn-img btn-save" data-save-fav="saveMe">
+                <i class="fas fa-heart"></i>
+                Favorite
+            </button>
+            <button id="{{ photoID }}" type="button" class="btn btn-primary btn-sm btn-img btn-edit" data-toggle="modal" data-target="#editPhotoDetails" data-photo-db-id="{{ photoDBID }}" style="display: none;">
+                <i class="fas fa-meteor"></i>
+                Edit
+            </button>
+
+            <img id="photoURL_{{ photoID }}" src="{{ photoURL }}" class="card-img-bottom" alt="{{ photoDate }}">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+html {
+    background: #230119 url(imgs/from_mars_with_love_background.png) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    background: url(imgs/mars_surface.png) no-repeat center bottom;
+    min-height: 100vh;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15rem;
+    color: #fff;
+}
+
+header {
+    padding: 30px;
+}
+
+.logo {
+    background: transparent url(imgs/from_mars_with_love_logo.png) no-repeat left top;
+    height: 125px;
+    background-size: contain;
+    text-indent: -900000px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-primary {
+	background-color: #ffaa00 !important;
+	border-color: #ffaa00 !important;
+	color: #121212;
+}
+.btn-primary:hover {
+	background-color: #bc6200 !important;
+}
+
+.form-control:focus, 
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus  {
+    border-color: #ffaa00;
+    outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(188,98,0,.25);
+}
+
+btn-primary:disabled:hover {
+    background-color: #ffaa00 !important;
+    cursor: not-allowed;
+}
+
+.img-container {
+    position: relative;
+}
+.btn-img {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+
+/*Adjust Cards*/
+
+.card {
+    border: 0 none;
+    background-color: rgba(35,1,25,.7);
+    color: #fff;
+}
+
+.card-title {
+    color: #f17252;
+    font-weight: bold;
+}
+
+.brand-primary {
+    color: #ffaa00;
+}
+
+.modal-content {
+    background: #230119;
+    border: 0 none;
+}
+
+.modal-header,
+.modal-footer {
+    border-color: #000;
+}

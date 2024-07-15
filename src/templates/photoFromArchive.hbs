@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="card-body">
+        <div id="photoFromArchiveContent">
+            <h2 class="card-title">Random photo from the archive</h2>
+            
+            <p class="lead">
+                Curiosity:
+                <!--<span id="photoRover">{{ photoRover }}</span>:-->
+                <span id="photoDate">{{ photoDate }}</span> <br />
+                <span id="photoCamera">{{ photoCamera }}</span>
+                <span id="photoID" style="display: none;">{{ photoID }}</span>
+            </p>
+
+            <button id="getAnotherRandomPhoto" type="button" class="btn btn-primary">
+                <i class="fas fa-dice"></i>
+                Another!
+            </button>
+        </div>
+    </div>
+    <div id="photoFromArchiveImage" class="img-container">
+        <button id="saveRandomPhoto" type="button" class="btn btn-primary btn-img" data-save-fav="saveMe">
+            <i class="fas fa-heart"></i>
+            Favorite
+        </button>
+    
+        <img id="photoURL" src="{{ photoURL }}" class="card-img-bottom" alt="{{ photoDate }}">
+    </div>
+</div>

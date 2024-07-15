@@ -1,0 +1,32 @@
+{
+  "name": "from_mars_with_love",
+  "version": "1.0.0",
+  "description": "Save your favorite Mars rover photos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack && http-server ./dist -a localhost --port 3000 -c-1"
+  },
+  "keywords": [
+    "mars",
+    "rover",
+    "nasa",
+    "love",
+    "robots"
+  ],
+  "author": "Lauren Egan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-env": "^7.12.7",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^6.3.2",
+    "webpack": "^5.9.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.0",
+    "firebase": "^8.1.1",
+    "handlebars": "^4.7.6"
+  }
+}

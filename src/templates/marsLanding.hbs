@@ -1,0 +1,75 @@
+<header>
+    <div class="row">
+        <div class="col">
+            <h1 class="logo">From Mars with Love</h1>
+        </div>
+        <div class="col">
+            <a href="#/myFavs" class="btn btn-primary float-right my-2">
+                <i class="fas fa-heart"></i> 
+                My Favorites
+            </a>
+
+            <!--<button type="button" class="btn btn-dark btn-block mt-2" data-target="#add-wine-modal" data-toggle="modal">
+                My Favorites
+            </button>-->
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <!--Search Form-->
+        <div class="card card-body mb-4">
+            <h2 class="card-title">Search for photos from Mars</h2>
+            <form id="search-form">
+                <div class="row">
+                    <div class="col form-group">
+                        <label for="dateField">Date</label>
+                        <input type="text" id="dateField" name="dateSearch" class="form-control" placeholder="YYYY-MM-DD format" />
+                    </div>
+
+                    <div class="col form-group">
+                        <label for="cameraSelect">Camera</label>
+                        <select id="cameraSelect" name="cameraSearch" class="form-control">
+                            <option value="CHEMCAM">Chemistry and Camera Complex</option>
+                            <option value="FHAZ" selected>Front Hazard Avoidance Camera</option>
+                            <option value="MAHLI">Mars Hand Lens Imager</option>
+                            <option value="MARDI">Mars Descent Imager</option>
+                            <option value="MAST">Mast Camera</option>
+                            <option value="NAVCAM">Navigation Camera</option>
+                            <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button id="searchButton" type="submit" class="btn btn-primary">
+                    Search
+                </button>
+            </form>
+        </div>
+        <!--/Search Form-->
+
+        <!--Photo Search Results-->
+        <div id="photoSearch" class="row"></div>
+        <div id="noPhotoFromSearchFound" class="card card-body text-center mb-4" style="display: none;">
+            <p>
+                <i class="fas fa-satellite-dish fa-8x d-block mb-4 brand-primary"></i>
+                No photos found for that date and camera combination.
+            </p>
+        </div>
+
+        <!--Photo of the Day at random-->
+        <div id="photoFromArchive"></div>
+        <div id="noPhotoFromArchiveFound" class="card card-body text-center" style="display: none;">
+            <h2 class="card-title">Random photo from the archive</h2>
+            <p>
+                <i class="fas fa-sad-tear fa-8x d-block mb-4 brand-primary"></i>
+                No photos found. Try again.
+            </p>
+
+            <button id="getAnotherRandomPhotoError" type="button" class="btn btn-primary btn-lg">
+                <i class="fas fa-dice"></i>
+                Another!
+            </button>
+        </div>
+    </div>
+</main>
